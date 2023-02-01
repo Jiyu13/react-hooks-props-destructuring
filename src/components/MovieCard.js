@@ -1,7 +1,19 @@
 import React from "react";
 
 // child component
-function MovieCard({ title, posterSrc, genres}) {
+// Without Destructuring
+// function MovieCard(props) {
+//   return (
+//     <div className="movie-card">
+//       <img src={props.posterSrc} alt={props.title} />
+//       <h2>{props.title}</h2>
+//       <small>{props.genres.join(", ")}</small>
+//     </div>
+//   );
+// }
+
+// With Destructuring
+function MovieCard({ title, posterSrc, genres }) {
   return (
     <div className="movie-card">
       <img src={posterSrc} alt={title} />
@@ -10,5 +22,6 @@ function MovieCard({ title, posterSrc, genres}) {
     </div>
   );
 }
+
 
 export default MovieCard;
