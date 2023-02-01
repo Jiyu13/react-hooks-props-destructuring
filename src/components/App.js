@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-import SocialMedia from "./SocialMedia";
+// import SocialMedia from "./SocialMedia";
 
 // parent component
 function App() {
@@ -10,15 +10,16 @@ function App() {
   const genresArr = ["Action", "Adventure", "Science Fiction", "Thriller"];
 
 
-  const socialLinks = {
-    github: "https://github.com/liza",
-    linkedin: "https://www.linkedin.com/in/liza/",
+  // const socialLinks = {
+  //   github: "https://github.com/liza",
+  //   linkedin: "https://www.linkedin.com/in/liza/",
 
-  }
+  // }
 
   return (
     <div className="App">
-      <MovieCard title={title} genres={genresArr} posterSrc={posterURL} />
+      <MovieCard title={title} genres={genresArr} /> {/*omit posterSrc */}
+      {/* <MovieCard title={title} genres={genresArr} posterSrc={posterURL} /> */}
 
       {/* <SocialMedia links={socialLinks}/> */}
     </div>
